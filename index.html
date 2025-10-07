@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Inventory Management App</h1>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Add New Product</h2>
+      <form id="productForm">
+        <input type="text" id="productName" placeholder="Product Name" required>
+        <input type="number" id="productQuantity" placeholder="Quantity" min="1" required>
+        <input type="number" id="productPrice" placeholder="Price per unit" min="0" required>
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
+
+    <section class="inventory-section">
+      <h2>Inventory List</h2>
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price (₹)</th>
+            <th>Total (₹)</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="summary">
+        <strong>Total Inventory Value:</strong> ₹<span id="totalValue">0</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by Tejas Bhole 🌟</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
